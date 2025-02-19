@@ -29,7 +29,6 @@ export default function Home() {
             fill
             style={{ objectFit: 'cover', filter: 'blur(1px)', WebkitBackdropFilter: 'blur(4px)', backdropFilter: 'blur(4px)' }}
             quality={90}
-            priority={true}
             loading="lazy" // Changed from "eager" to "lazy" for quicker loading
           />
         </div>

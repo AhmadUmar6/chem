@@ -54,9 +54,10 @@ export default function Firm() {
               src={image.src}
               alt={image.alt}
               fill
-              priority
+              priority={index === 0} // Load the first image with priority
               sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 100vw"
-              quality={90}
+              quality={75} // Reduced quality for faster loading
+              loading={index === 0 ? 'eager' : 'lazy'} // Load the first image eagerly, others lazily
               style={{
                 objectFit: 'cover',
               }}

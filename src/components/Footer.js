@@ -21,13 +21,13 @@ export default function Footer() {
           <div className={styles.followUs}>
             <h3>FOLLOW US ON</h3>
             <div className={styles.socialIcons}>
-              <a href="https://www.linkedin.com/company/your-company" target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} className={styles.socialIcon} />
               </a>
-              <a href="https://www.facebook.com/your-company" target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebook} className={styles.socialIcon} />
               </a>
-              <a href="https://www.twitter.com/your-company" target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faTwitter} className={styles.socialIcon} />
               </a>
             </div>
