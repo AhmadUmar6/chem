@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.leftSection {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.rightSection {
+  flex: 1;
+}
+
+.contactCard {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.contactItem:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.icon {
+  color: BLACK;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.contactText h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+}
+
+.contactText p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .leftSection {
+    padding-right: 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    max-width: 100%;
+  }
+}

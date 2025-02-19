@@ -1,0 +1,114 @@
+.firmPage {
+  background-color: #F7F7F7;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the Next.js Image component wrapper */
+.imageContainer > span {
+  position: unset !important;
+}
+
+.imageContainer img {
+  object-fit: cover !important;
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.section {
+  padding: 2rem;
+  margin-top: -13.5rem;
+  position: relative;
+  z-index: 3;
+  background-color: #F7F7F7;
+}
+
+.section2 {
+  width: 100%;
+  margin-top: -2rem;
+  position: relative;
+  z-index: 3;
+  background-color: #F7F7F7;
+}
+
+/* Large tablets and small desktops */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .heroSection {
+    height: 90vh;
+  }
+
+  .section {
+    padding: 3rem;
+    margin-top: -10rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heroSection {
+    height: 80vh;
+  }
+
+  .section {
+    padding: 2rem;
+    margin-top: -8rem;
+  }
+}
+
+/* Large phones */
+@media (min-width: 481px) and (max-width: 767px) {
+  .heroSection {
+    height: 70vh;
+  }
+
+  .section {
+    padding: 1.5rem;
+    margin-top: -6rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .heroSection {
+    height: 60vh;
+  }
+
+  .section {
+    padding: 1rem;
+    margin-top: -5rem;
+  }
+
+  .imageContainer img {
+    object-position: center 20% !important; /* Adjust vertical position for mobile */
+  }
+}
+
+/* Handle landscape orientation on mobile */
+@media (max-width: 896px) and (orientation: landscape) {
+  .heroSection {
+    height: 100vh;
+  }
+
+  .section {
+    margin-top: -8rem;
+  }
+}

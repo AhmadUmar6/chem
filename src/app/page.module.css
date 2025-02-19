@@ -1,0 +1,330 @@
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.heroText {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 122px;
+}
+
+.headerTitle {
+  font-size: 10rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: rgba(136, 0, 134, 0.95);
+  text-shadow: 2px 2px 1px white;
+}
+
+.headerSubtitle {
+  font-size: 3rem;
+  max-width: 100%;
+  line-height: 3rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  margin-top: 1rem;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.aboutSection {
+  background: white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.aboutContainer {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.leftBox {
+  background-color: #880086;
+  padding: 2rem;
+  max-width: 40%;
+  text-align: left;
+}
+
+.rightText {
+  color: #000000;
+  padding: 2rem;
+  max-width: 60%;
+  font-size: 1.2rem;
+  line-height: 3;
+}
+
+.sectionTitle2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-family: 'Lora', serif;
+}
+
+.readMoreLink {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.readMoreLink:hover {
+  text-decoration: underline;
+}
+
+.servicesSection {
+  background: #9DB0BE;
+  padding: 6rem 2rem;
+}
+
+.servicesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.serviceItem {
+  position: relative;
+  background: white;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.serviceContent {
+  padding: 2.5rem;
+  position: relative;
+}
+
+.serviceContent h3 {
+  color: #880086;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.serviceLine {
+  width: 60px;
+  height: 3px;
+  background: #880086;
+  margin-bottom: 1.5rem;
+}
+
+.serviceContent p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contactSection {
+  background-color: #880086;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.contactContent {
+  flex: 2;
+  text-align: right;
+}
+
+.mapContainer {
+  padding: 0;
+  flex: 7;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  line-height: 90%;
+  color: #880086;
+}
+
+.servicesSection .sectionTitle {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 2rem;
+}
+
+.contactSection .sectionTitle {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+@media (max-width: 600px) {
+  .heroText {
+    bottom: 250px;
+    line-height: 58px;
+  }
+
+  .headerTitle {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  .headerSubtitle {
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .aboutSection {
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+
+  .aboutContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leftBox {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .rightText {
+    max-width: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .sectionTitle2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .servicesSection {
+    padding: 4rem 1rem;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .serviceContent {
+    padding: 1.5rem;
+  }
+
+  .serviceContent h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .serviceLine {
+    margin-bottom: 1rem;
+  }
+
+  .contactSection {
+    padding: 2rem;
+    background-attachment: scroll;
+    background-position: center top;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .contactContent {
+    padding-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    flex: auto;
+  }
+
+  .mapContainer {
+    flex: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+  .headerTitle {
+    font-size: 8rem;
+  }
+
+  .headerSubtitle {
+    font-size: 2rem;
+  }
+
+  .aboutSection {
+    padding: 2rem 1rem;
+  }
+
+  .leftBox, .rightText {
+    padding: 2rem;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .serviceContent {
+    padding: 2rem;
+  }
+
+  .serviceContent h3 {
+    font-size: 1.3rem;
+  }
+
+  .serviceContent p {
+    font-size: 1rem;
+  }
+}

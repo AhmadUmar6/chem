@@ -1,0 +1,198 @@
+.footer {
+background-color: white; /*  #4CBB17; */
+ color: black;
+ padding: 3rem 2rem;
+ position: relative;
+ overflow: hidden;
+ }
+ .footer::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ height: 2px;
+ background: linear-gradient(to right, black, #d0cfd2, #0a3d20, #0d4f2a);
+ background-size: 300% 100%;
+ animation: gradientMove 3s linear infinite;
+ }
+ @keyframes gradientMove {
+  0% {
+ background-position: 0% 0%;
+  }
+  100% {
+ background-position: 100% 0%;
+  }
+ }
+ .footerContent {
+ display: flex;
+ justify-content: space-between;
+ max-width: 1200px;
+ margin: 0 auto;
+ flex-wrap: wrap;
+ }
+ .logoColumn {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ flex: 1;
+ min-width: 250px;
+ margin-bottom: 2rem;
+ }
+ .logo {
+ width: 270px;
+ height: auto;
+ margin-bottom: 2rem;
+ filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4)); /* Logo shadow following its shape */
+ transition: transform 0.3s ease;
+ }
+ .logo:hover {
+ transform: scale(1.05);
+ }
+ .followUs h3 {
+ font-size: 1rem;
+ margin-bottom: 1rem;
+ position: relative;
+ padding-bottom: 0.5rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+ .followUs h3::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 50px;
+ height: 3px;
+ background-color:#880086;
+ transition: width 0.3s ease;
+ }
+ .followUs:hover h3::after {
+ width: 70px;
+ }
+ .socialIcons {
+ display: flex;
+ gap: 1rem;
+ }
+ .socialIcon {
+ font-size: 1.4rem;
+ color:#880086;
+ transition: all 0.3s ease;
+ }
+ .socialIcon:hover {
+ opacity: 1;
+ transform: translateY(-3px);
+ }
+ .siteMap, .contact {
+ flex: 1;
+ min-width: 200px;
+ margin-bottom: 1rem;
+ }
+ .siteMap h3, .contact h3 {
+ font-size: 1.1rem;
+ margin-bottom: 1rem;
+ position: relative;
+ padding-bottom: 0.5rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+ .siteMap h3::after, .contact h3::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 50px;
+ height: 3px;
+ background-color: #880086;
+ transition: width 0.3s ease;
+ }
+ .siteMap:hover h3::after, .contact:hover h3::after {
+ width: 70px;
+ }
+ .siteMap ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ }
+ .siteMap li {
+ margin-bottom: 0.75rem;
+ }
+ .siteMap a, .contact p {
+ color: black;
+ text-decoration: none;
+ transition: all 0.3s ease;
+ display: inline-block;
+ }
+ .siteMap a:hover, .contact p:hover {
+ color: black;
+ transform: translateX(5px);
+ }
+ .contact p {
+ display: flex;
+ align-items: baseline;
+ gap: 0.5rem;
+ margin-bottom: 0.75rem;
+ }
+ .contact p svg {
+ font-size: 1.1rem;
+ color: black;
+ transition: transform 0.3s ease;
+ }
+ .contact p:hover svg {
+ color: black;
+ transform: scale(1.1);
+ }
+ .copyright {
+ text-align: center;
+ margin-top: 0rem;
+ padding-top: 2rem;
+ border-top: 1px solid rgba(0, 0, 0, 0.7);
+ font-size: 0.9rem;
+ opacity: 0.8;
+ }
+ .developerLink {
+ color: black;
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+ .developerLink:hover {
+ color:#880086;
+ }
+ @media (max-width: 768px) {
+ .footerContent {
+ flex-direction: column;
+ align-items: center;
+  }
+ .footer::before{
+ height: 1px;
+  }
+ .logoColumn, .siteMap, .contact {
+ width: 100%;
+ text-align: center;
+ align-items: center;
+  }
+ .siteMap h3::after, .contact h3::after, .followUs h3::after {
+ left: 50%;
+ transform: translateX(-50%);
+  }
+ .logo {
+ width: 220px;
+  }
+ .socialIcons {
+ justify-content: center;
+  }
+ .contact {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ gap: 1rem;
+ font-size: small;
+  }
+ .contact p svg {
+ font-size: 0.9rem;
+  }
+ .siteMap a:hover, .contact p:hover {
+ transform: translateY(-3px);
+  }
+ }

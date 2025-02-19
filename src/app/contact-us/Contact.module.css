@@ -1,0 +1,40 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7F7F7;
+  padding: 2rem 1rem;
+  margin-top: 8rem;
+}
+
+.mapSection {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.formSection {
+  width: 100%;
+  background-color: #EFEFEF;
+}
+
+.p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .mapSection {
+    width: 60%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .formSection {
+    width: 100vw;
+    height: 30vw;
+    padding-top: 1rem;
+  }
+}
