@@ -30,7 +30,7 @@ export default function Home() {
             style={{ objectFit: 'cover', filter: 'blur(1px)', WebkitBackdropFilter: 'blur(4px)', backdropFilter: 'blur(4px)' }}
             quality={90}
             priority={true}
-            loading="eager"
+            loading="lazy" // Changed from "eager" to "lazy" for quicker loading
           />
         </div>
         <div className={styles.heroText}>
