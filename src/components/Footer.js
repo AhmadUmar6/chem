@@ -18,21 +18,7 @@ export default function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.logoColumn}>
           <img src="/logo.png" alt="Company Logo" className={styles.logo} />
-          <div className={styles.followUs}>
-            <h3>FOLLOW US ON</h3>
-            <div className={styles.socialIcons}>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} className={styles.socialIcon} />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faFacebook} className={styles.socialIcon} />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faTwitter} className={styles.socialIcon} />
-              </a>
-            </div>
-          </div>
-        </div>
+        </div>  
         <div className={styles.siteMap}>
           <h3>SITE MAP</h3>
           <ul>
