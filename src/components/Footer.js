@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
         <div className={styles.contact}>
           <h3>CONTACT US</h3>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> P-8, Above Diverse Properties, Main Sheikhupura Road, Faisalabad </p>
+          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> P-8, Above Diverse Properties, Opposite Guttwala Commercial Hub, Main Sheikhupura Road, Faisalabad </p>
           <p><FontAwesomeIcon icon={faPhone} /> 03008690577</p>
           <p><FontAwesomeIcon icon={faEnvelope} /> corporate@chemtechsolutions.co</p>
         </div>

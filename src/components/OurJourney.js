@@ -55,7 +55,7 @@ export default function OurJourney({ scrollToSection }) {
       <motion.div className={styles.ourJourney}>
         <h2>About Us</h2>
         <p>
-          ChemTech Solutions, led by Chief Executive Officer Muhammad Saeed Akhtar, is a pioneering force 
+          Chemtech Solutions, led by Chief Executive Officer Muhammad Saeed Akhtar, is a pioneering force 
           in industrial chemical and engineering solutions. Since our establishment, we have been at the 
           forefront of delivering cutting-edge technology solutions for industrial processes, specializing 
           in boiler systems, cooling solutions, and water treatment technologies.

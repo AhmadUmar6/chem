@@ -19,6 +19,7 @@ export default function Header() {
         </Link>
       </div>
       <nav className={styles.desktopNav}>
+        <Link href="/">Home</Link>
         {['About Us', 'Products', 'Contact Us'].map((item) => (
           <Link key={item} href={`/${item.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}>
             {item}

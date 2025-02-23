@@ -16,7 +16,7 @@ export default function Maps() {
         ></iframe>
         <div className={styles.address}>
           <h3>Chemtech Solutions Private Limited</h3>
-          <p>P-8, Above Diverse Properties, Main Sheikhupura Road, Faisalabad.</p>
+          <p>P-8, Above Diverse Properties, Opposite Guttwala Commercial Hub, Main Sheikhupura Road, Faisalabad.</p>
         </div>
       </div>
     </div>

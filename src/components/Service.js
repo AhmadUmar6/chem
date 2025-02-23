@@ -62,9 +62,9 @@ export default function Products() {
 
   const getCategoryTitle = (key) => {
     switch(key) {
-      case 'boilerRange': return 'Boiler Range';
-      case 'coolingSystemRange': return 'Cooling System Range';
-      case 'roRange': return 'RO Range';
+      case 'boilerRange': return 'Servivap Boiler Range';
+      case 'coolingSystemRange': return 'Servivap Cooling System Range';
+      case 'roRange': return 'Servivap RO Range';
       default: return '';
     }
   };
@@ -120,7 +120,7 @@ export default function Products() {
                       className={styles.requestButton}
                       onClick={handleRequestDocumentation}
                     >
-                      Request Documentation
+                      Details
                     </button>
                   </div>
                 )}

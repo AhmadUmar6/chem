@@ -61,7 +61,7 @@ export default function Home() {
             </Link>
           </div>
           <div className={styles.rightText}>
-            <p>Our dedication to superior water treatment technology and unparalleled customer service has established us as a trusted leader in Pakistan's environmental solutions sector. We take pride in our ability to deliver cutting-edge water treatment systems while fostering employee growth.</p>
+            <p>Our dedication to superior water treatment technology and unparalleled customer service has established us as a trusted leader in Pakistan's industrial sector. We take pride in our ability to deliver cutting-edge water treatment systems while fostering employee growth.</p>
           </div>
         </div>
       </Section>
