@@ -38,6 +38,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className={styles.headerTitle}
+            style={{ fontFamily: 'Bahnschrift, sans-serif' }}
           >
             Chemtech Solutions
           </motion.h1>
@@ -46,8 +47,9 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className={styles.headerSubtitle}
+            style={{ fontFamily: 'Bahnschrift, sans-serif' }}
           >
-            Aiming to become one of the leading water treatment companies in Pakistan.
+            Aiming to become the leading water treatment company in Pakistan.
           </motion.p>
         </div>
       </header>

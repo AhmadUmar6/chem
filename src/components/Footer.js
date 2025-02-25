@@ -22,7 +22,7 @@ export default function Footer() {
         <div className={styles.siteMap}>
           <h3>SITE MAP</h3>
           <ul>
-            {['About Us', 'Services', 'Contact Us'].map((item) => (
+            {['About Us', 'Products', 'Contact Us'].map((item) => (
               <li key={item}>
                 <Link href={`/${item.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}>
                   {item}
